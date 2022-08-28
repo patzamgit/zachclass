@@ -1,0 +1,34 @@
+{% macro render(options) %}
+<div class="{{options.wrapperClasses}}" style="background-image:url({{options.backgroundImage}})" >
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-9 col-lg-7 col-xl-6">
+        <div class="text-center">
+          <p class="gr-text-12 gr-text-color font-weight-bold text-uppercase mb-9">Minimal Interior Design</p>
+          <h1 class="gr-text-2 mb-8">We minimize your waste in every step of the process.</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro code(options) %}
+   <!-- Hero Area -->
+   <pre class="language-markup">
+    <code>
+      &lt;div class=&quot;{{options.wrapperClasses}}&quot; style=&quot;background-image:url({{options.backgroundImage}})&quot; &gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row justify-content-center&quot;&gt;
+          &lt;div class=&quot;col-md-9 col-lg-7 col-xl-6&quot;&gt;
+            &lt;div class=&quot;text-center&quot;&gt;
+              &lt;p class=&quot;gr-text-12 gr-text-color font-weight-bold text-uppercase mb-9&quot;&gt;Minimal Interior Design&lt;/p&gt;
+              &lt;h1 class=&quot;gr-text-2 mb-8&quot;&gt;We minimize your waste in every step of the process.&lt;/h1&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    </code>
+   </pre>
+{% endmacro %}

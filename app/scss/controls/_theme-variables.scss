@@ -1,0 +1,31 @@
+@import "theme-color-control";
+@import "theme-color-maping";
+@import "theme-border-control";
+@import "theme-font-control";
+@import "theme-form-control";
+@import "theme-btn-control";
+@import "theme-grid-control";
+@import "theme-spacing-control";
+@import "theme-shadow-control";
+@import "theme-size-control";
+
+
+
+// Body
+// Settings for the `<body>` element.
+
+$body-bg:                   var(--bg);
+$body-color:                var(--color-texts-opacity);
+$border-color:              var(--border-color);
+
+
+// Links
+// Style anchor elements.
+
+$link-color:                              $primary;
+$link-hover-color:                        darken($link-color, 15%);
+$link-decoration:                         none;
+$link-hover-decoration:                   none;
+
+
+

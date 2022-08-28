@@ -1,0 +1,57 @@
+{% macro render(root,additional_class) %}
+
+<div class="testimonial-section pt-15 pt-lg-22 pb-15 pb-lg-25 {{additional_class}}">
+  <div class="container">
+    <div class="row justify-content-center dark-mode-texts">
+      <div class="col-md-8 col-lg-7 col-xl-6">
+        <div class="section-title text-center mb-11 mb-lg-15">
+          <h2 class="title-sm gr-text-5 mb-0 text-white"><span class="strike-bottom green">1,749 remote teams</span> have shared their experience with our app!</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-10 col-lg-8 mb-7" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+        <div class="testimonial-card d-flex flex-column flex-md-row align-items-md-center border rounded-12 bg-white pt-9 pb-8 px-9 gr-hover-opacity-full">
+          <div class="card-image rounded-circle mr-9 mb-7 mb-md-0">
+            <img class="circle-xxl w-100" src="{{root}}image/l6/jpg/l6-testimonial-img1.jpg" alt="">
+          </div>
+          <div class="testimonial-content">
+            <p class="review-text gr-text-7 text-blackish-blue mb-6">“OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.”</p>
+            <span class="name gr-text-9 text-blackish-blue gr-opacity-7 mb-0">Isaac Olson</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-lg-8 mb-7" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
+        <div class="testimonial-card d-flex flex-column flex-md-row align-items-md-center border rounded-12 bg-white pt-9 pb-8 px-9 gr-opacity-7 gr-hover-opacity-full">
+          <div class="card-image rounded-circle mr-9 mb-7 mb-md-0">
+            <img class="circle-xxl w-100" src="{{root}}image/l6/jpg/l6-testimonial-img2.jpg" alt="">
+          </div>
+          <div class="testimonial-content">
+            <p class="review-text gr-text-7 text-blackish-blue mb-6">“Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users who want success.”</p>
+            <span class="name gr-text-9 text-blackish-blue gr-opacity-7 mb-0">Barry Young</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-lg-8 mb-7" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400"data-aos-once="true">
+        <div class="testimonial-card d-flex flex-column flex-md-row align-items-md-center border rounded-12 bg-white pt-9 pb-8 px-9 gr-opacity-5 gr-hover-opacity-full">
+          <div class="card-image rounded-circle mr-9 mb-7 mb-md-0">
+            <img class="circle-xxl w-100" src="{{root}}image/l6/jpg/l6-testimonial-img3.jpg" alt="">
+          </div>
+          <div class="testimonial-content">
+            <p class="review-text gr-text-7 text-blackish-blue mb-6">“Must have book for all, who want to be Product Designer or Interaction Designer.”</p>
+            <span class="name gr-text-9 text-blackish-blue gr-opacity-7 mb-0">Esther Allison</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-7 text-center pt-10">
+        <div class="more-btn testimonial-btn">
+          <a href="#" class="btn-link with-icon text-green font-weight-bold">Read more reviews<i class="icon icon-tail-right font-weight-bold"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

@@ -1,0 +1,24 @@
+{% macro render(root,additional_class) %}
+
+<div class="{{additional_class}}">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 col-lg-6 mb-n15" data-aos="zoom-in-down" data-aos-duration="1100" data-aos-once="true">
+        <div class="content-img text-left pr-xl-13 ml-n8">
+          <img src="{{root}}image/l8/png/content-left-image.png" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-xs-11 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+        <div class="pl-lg-3 pl-xl-12 mt-12 mt-md-0">
+          <h2 class="title gr-text-4 mb-7">Track your progress with our advanced site.</h2>
+          <p class="gr-text-8 gr-text-color-opacity">We share common trends and strategies for improving your rental income and making sure you stay in high demand.</p>
+          <div class="pt-7">
+            <a href="" class="btn-link with-icon text-white btn-hover-translate-none gr-text-9 pl-0 pr-0 font-weight-bold">Start shopping <i class="icon icon-tail-right font-weight-bold"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

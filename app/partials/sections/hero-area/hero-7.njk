@@ -1,0 +1,62 @@
+{% macro render(options) %}
+<div class="{{options.wrapperClasses}}" >
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-xl-8 col-lg-9 col-md-11" data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
+        <div class="hero-content text-center">
+          <div class="hero-img mb-12" data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
+            <img src="{{options.heroImage}}" alt="" class=" rounded-8">
+          </div>
+          <h4 class="pre-title gr-text-12 text-red text-uppercase mb-9">Non-stop music for long time</h4>
+          <h1 class="title gr-text-2 mb-8">Sound, that sounds better!</h1>
+          <p class="gr-text-8 mb-10 px-lg-11 px-xl-15">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
+          <div class="hero-btn mb-8">
+            <a href="#" class="btn btn-primary gr-hover-y">Buy now - Starting at $99</a>
+          </div>
+          <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video-link gr-text-color">
+            <span class="d-inline-flex mr-lg-3 gr-text-color gr-text-12">
+              <i class="far fa-play-circle gr-text-11"></i>
+            </span>
+            <span class="gr-text-12 font-weight-bold text-uppercase">Watch in action</span>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+
+{% macro code(options) %}
+   <!-- Hero Area Code-->
+   <pre class="language-markup">
+    <code>
+      &lt;div class=&quot;{{options.wrapperClasses}}&quot; &gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row justify-content-center align-items-center&quot;&gt;
+          &lt;div class=&quot;col-xl-8 col-lg-9 col-md-11&quot; data-aos=&quot;zoom-in&quot; data-aos-duration=&quot;500&quot; data-aos-once=&quot;true&quot;&gt;
+            &lt;div class=&quot;hero-content text-center&quot;&gt;
+              &lt;div class=&quot;hero-img mb-12&quot; data-aos=&quot;zoom-in&quot; data-aos-duration=&quot;500&quot; data-aos-once=&quot;true&quot;&gt;
+                &lt;img src=&quot;{{options.heroImage}}&quot; alt=&quot;&quot; class=&quot; rounded-8&quot;&gt;
+              &lt;/div&gt;
+              &lt;h4 class=&quot;pre-title gr-text-12 text-red text-uppercase mb-9&quot;&gt;Non-stop music for long time&lt;/h4&gt;
+              &lt;h1 class=&quot;title gr-text-2 mb-8&quot;&gt;Sound, that sounds better!&lt;/h1&gt;
+              &lt;p class=&quot;gr-text-8 mb-10 px-lg-11 px-xl-15&quot;&gt;With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.&lt;/p&gt;
+              &lt;div class=&quot;hero-btn mb-8&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-primary gr-hover-y&quot;&gt;Buy now - Starting at $99&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;a data-fancybox href=&quot;https://www.youtube.com/watch?v=_sI_Ps7JSEk&quot; class=&quot;video-link gr-text-color&quot;&gt;
+                &lt;span class=&quot;d-inline-flex mr-lg-3 gr-text-color gr-text-12&quot;&gt;
+                  &lt;i class=&quot;far fa-play-circle gr-text-11&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class=&quot;gr-text-12 font-weight-bold text-uppercase&quot;&gt;Watch in action&lt;/span&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    </code>
+   </pre>
+{% endmacro %}

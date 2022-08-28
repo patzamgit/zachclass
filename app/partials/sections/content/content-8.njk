@@ -1,0 +1,55 @@
+{% macro render(root,additional_class) %}
+
+<div class="content-section position-relative overflow-hidden {{additional_class}}">
+  <div class="container">
+    <div class="row align-items-center justify-content-md-center">
+      <div class="col-sm-10 col-lg-5 position-static">
+        <div class="content-img position-relative gr-abs-lg gr-abs-lg-ly-center w-lg-50 text-center text-lg-left">
+          <img class="h-100 w-100 w-lg-75" src="{{root}}image/l7/jpg/content1-img-big.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-sm-11 col-lg-7">
+        <div class="row">
+          <div class="col-lg-10 col-xl-9">
+            <div class="content-text mb-9 mb-lg-17 mb-xl-22 mt-11 mt-lg-0">
+              <h2 class="title gr-text-3 mb-7">Listen music <br class="d-none d-lg-block">anytime, anywhere.</h2>
+              <p class="gr-text-8 mb-9 pr-11">We share common trends and strategies for improving your rental income.</p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="features-wrapper mt-6 mt-md-0">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="single-feature media py-6" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+                    <div class="media-icon mr-6">
+                      <img src="{{root}}image/l7/png/content1-icon1.png" alt="">
+                    </div>
+                    <div class="media-body">
+                      <h3 class="title gr-text-7 mb-6">Comfortable Buds</h3>
+                      <p class="gr-text-9 mb-0 pr-xl-6">With lots of unique blocks, you can easily build a page without coding. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-feature media py-6" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
+                    <div class="media-icon mr-6">
+                      <img src="{{root}}image/l7/png/content1-icon2.png" alt="">
+                    </div>
+                    <div class="media-body">
+                      <h3 class="title gr-text-7 mb-6">Powerful Bass</h3>
+                      <p class="gr-text-9 mb-0 pr-xl-6">With lots of unique blocks, you can easily build a page without coding. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>                
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

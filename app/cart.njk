@@ -1,0 +1,145 @@
+{% extends "template.njk" %}
+{# {% set theme_mode = "dark" %}  #}
+
+{% import "sections/header/_header.njk" as Header %}
+{% block main %}
+{{Header.render(header.innerPage,1)}}
+<!-- Page Banner Area -->
+<div class="inner-banner pt-29 pb-md-13 bg-default-2">
+  <div class="container">
+    <div class="row  justify-content-center pt-5">
+      <div class="col-xl-8 col-lg-9">
+       <div class="px-md-15 text-center">
+        <h2 class="title gr-text-2 mb-9">Your cart</h2>
+        <p class="gr-text-8 mb-13">2 Items on your cart</p>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% set product_data = [
+  {
+  image: "image/inner/cart-product-image.png",
+  title:"Amazon Echo Super Extra Bass Home System",
+  price:"$70",
+  quantity:"2",
+  total:"$140"
+  },
+  {
+  image: "image/inner/cart-product-image-2.png",
+  title:"Apple AirPods with Wired Charging Case",
+  price:"$150",
+  quantity:"1",
+  total:"$150"
+  }
+] %}
+
+<div class="bg-default-2 pb-17 pb-md-29 ">
+  <div class="container">
+    <div class="cart-details-main-block" id="dynamic-cart">
+      <div class="cart-product text-left pb-5 d-none d-lg-flex align-items-center">
+        <div class="product-block">
+          <h3 class="gr-text-12 font-weight-bold text-uppercase">Product</h3>
+        </div>
+        <div class="price-block">
+          <h3 class="gr-text-12 font-weight-bold text-uppercase">Price</h3>
+        </div>
+        <div class="quantity-block">
+          <h3 class="gr-text-12 font-weight-bold text-uppercase">Quantity </h3>
+        </div>
+        <div class="total-block ml-lg-n6">
+          <h3 class="gr-text-12 font-weight-bold text-uppercase">Total </h3>
+        </div>
+      </div>
+      {% for item in product_data %}
+
+      <!-- .cart_single-product-block starts -->
+      <div class="cart-product cart-item bg-white p-8 rounded-10 mb-5 overflow-hidden position-relative">
+
+        <!-- .product-block starts -->
+        <div class="product-block mb-7 mb-md-0 pr-md-15 pr-lg-12 pr-xl-15">
+          <div class="gr-flex-y-center pr-4 pr-xs-0">
+            <div class="square-80 mr-7 rounded-10 overflow-hidden">
+                <img src="{{item.image}}" alt="" class="w-100">
+            </div>
+            <h3 class="gr-text-8 font-weight-bold text-blackish-blue mb-0">{{item.title}}</h3>
+          </div>
+        </div>
+        <!-- .product-block ends -->
+
+        <!-- .product-price-block starts -->
+        <div class="price-block  d-none d-lg-flex align-items-center">
+          <h3 class="gr-text-8 font-weight-bold text-uppercase mb-0 text-blackish-blue">{{item.price}}</h3>
+        </div>
+        <!-- .product-price-block ends -->
+
+        <!-- .product-quantity-block starts -->
+        <div class="quantity-block gr-flex-y-center ml-xs-23 ml-md-0">
+          <div class="input--amount-control d-flex ">
+            <button class="amount-dec-btn btn-reset circle-xs bg-gray-3">-</button>
+            <span class="py-6 px-8 position-relative mx-2">
+              <input type="number" class="form-control gr-abs-tl h-100 w-100  pl-2 pr-2 text-center" value="{{item.quantity}}">
+            </span>
+            <button class="amount-inc-btn btn-reset circle-xs bg-gray-3">+</button>
+          </div>
+        </div>
+        <!-- .product-quantity-block ends -->
+
+        <!-- .product-quantity-block starts -->
+        <div class="total-block gr-flex-y-center pl-7 pl-xs-0">
+          <div class="gr-flex-y-center justify-content-between w-100">
+            <h3 class="gr-text-8 font-weight-bold text-uppercase mb-0 text-blackish-blue">{{item.total}} </h3>
+            <a href="#" class="icon icon-simple-remove cross-btn-positioning"></a>
+          </div>
+        </div>
+        <!-- .product-quantity-block ends -->
+
+      </div>
+       <!-- .cart_single-product-block ends -->
+
+      {% endfor %}
+    </div>
+    <div class="row justify-content-md-between pt-9">
+      <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
+        <a href="" class="btn btn-white border">Continue Shopping</a>
+      </div>
+      <div class="col-sm-7 col-md-7 col-lg-5">
+        <div class="bg-white px-7 py-8 rounded-10 ml-md-19 mt-9 mt-md-0">
+          <h3 class="gr-text-12 font-weight-bold text-uppercase text-blackish-blue pb-8">Order Details</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex justify-content-between mb-5">
+              <div class="d-flex gr-text-9 gr-color-blackish-blue-opacity-7">
+                <span class="d-inline-flex  pl-7 pt-5 position-relative mr-2 ">
+                  <input type="text" value="02" class="border-0 p-0 w-100 h-100 gr-abs-tl gr-text-9 focus-reset pointer-none gr-color-blackish-blue-opacity-7"> 
+                </span>
+                items</div>
+              <span class="d-block gr-text-9 font-weight-bold text-blackish-blue">$290</span>
+            </li>
+            <li class="d-flex justify-content-between mb-9">
+              <span class="d-block gr-text-9 gr-color-blackish-blue-opacity-7">Delivery Fee</span>
+              <span class="d-block gr-text-9 font-weight-mid text-green-shamrock">FREE</span>
+            </li>
+            <li class="d-flex justify-content-between">
+              <span class="d-block gr-text-7 font-weight-bold text-blackish-blue">Total Price</span>
+              <span class="d-block gr-text-7 font-weight-bold text-blackish-blue">$290</span>
+            </li>
+          </ul>
+          <div class="px-1 pt-1">
+            <a href="#" class="btn btn-primary gr-text-9 w-100 ">Proceed to checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+{% include "_inner-footer.njk" %}
+
+{% endblock %}

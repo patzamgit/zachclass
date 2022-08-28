@@ -1,0 +1,39 @@
+{% macro render(root,additional_class) %}
+
+<div class="testimonial-section pt-13 pt-lg-24 pb-lg-19 {{additional_class}}">
+  <div class="container">
+    <div class="row align-items-center justify-content-around">
+      <div class="col-lg-5 col-xl-4">
+        <div class="testimonial-widget-1 text-center mb-13 mb-lg-0">
+          <div class="reviewer-img d-flex justify-content-center mb-7 mb-lg-12">
+            <img class="img-fluid circle-lg" src="{{root}}image/l1/jpg/l1-testimonial-img1.jpg" alt="">
+          </div>
+          <div class="review">
+            <h3 class="gr-text-6 mb-6 mb-lg-8">“You made it so simple”</h3>
+            <p class="gr-text-8 mb-lg-8">My new site is so much faster and easier to work with than my old site.</p>
+            <p class="name gr-text-color gr-text-9 font-weight-bold mb-0">Corey Valdez</p>
+            <p class="job gr-text-11">Founder at Zenix</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-1">
+        <div class="separator-line d-none d-lg-block"></div>
+      </div>
+      <div class="col-lg-5 col-xl-4">
+        <div class="testimonial-widget-1 text-center mb-13 mb-lg-0">
+          <div class="reviewer-img d-flex justify-content-center mb-7 mb-lg-12">
+            <img class="img-fluid circle-lg" src="{{root}}image/l1/jpg/l1-testimonial-img2.jpg" alt="">
+          </div>
+          <div class="review">
+            <h3 class="gr-text-6 mb-6 mb-lg-8">“Simply the best”</h3>
+            <p class="gr-text-8 mb-lg-8">Better than all the rest. I’d recommend this product to beginners.</p>
+            <p class="name gr-text-color gr-text-9 font-weight-bold mb-0">Ian Klein</p>
+            <p class="job gr-text-11">Digital Marketer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

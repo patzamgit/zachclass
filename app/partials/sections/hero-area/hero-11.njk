@@ -1,0 +1,56 @@
+{% macro render(options) %}
+
+  <div class="bg-default-6 pt-3 position-relative">
+    <div class="hero-area bg-image dark-mode-texts mx-6 mx-lg-8 mx-xl-11 rounded-15" style="background-image: url({{options.root}}../image/conference/jpg/hero-bg.jpg);">
+      <div class="container">
+        <div class="row justify-content-sm-end">
+          <div class="col-lg-6 col-md-8">
+            <div class="hero-content pr-xl-16 pt-18 pt-lg-31 pb-md-18 pb-lg-30 mb-9 mb-md-0">
+              <h6 class="gr-text-12 text-uppercase mb-8">Not another zoom for you!</h6>
+              <h1 class="title gr-text-2 mb-8">Start. Join. Meet.</h1>
+              <p class="gr-text-8 mb-0">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
+              <a href="#" class="btn btn-green text-white mt-11">Start my meeting</a>
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1 col-md-4 col-sm-7 align-self-sm-end">
+            <div class="hero-img hero-img-custom z-index-1 mb-n12 mb-md-0" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+              <img class="w-100 w-xl-auto" src="{{options.root}}image/conference/png/hero-main.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endmacro %}
+
+
+{% macro code(options) %}
+   <!-- Hero Area Code-->
+   <pre class="language-markup">
+    <code>
+      &lt;div class=&quot;bg-default-6 pt-3 position-relative&quot;&gt;
+      &lt;div class=&quot;hero-area bg-image dark-mode-texts mx-6 mx-lg-8 mx-xl-11 rounded-15&quot; style=&quot;background-image: url(../image/conference/jpg/hero-bg.jpg);&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+          &lt;div class=&quot;row justify-content-sm-end&quot;&gt;
+            &lt;div class=&quot;col-lg-6 col-md-8&quot;&gt;
+              &lt;div class=&quot;hero-content pr-xl-16 pt-18 pt-lg-31 pb-md-18 pb-lg-30 mb-9 mb-md-0&quot;&gt;
+                &lt;h6 class=&quot;gr-text-12 text-uppercase mb-8&quot;&gt;Not another zoom for you!&lt;/h6&gt;
+                &lt;h1 class=&quot;title gr-text-2 mb-8&quot;&gt;Start. Join. Meet.&lt;/h1&gt;
+                &lt;p class=&quot;gr-text-8 mb-0&quot;&gt;With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.&lt;/p&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-green text-white mt-11&quot;&gt;Start my meeting&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-lg-5 offset-lg-1 col-md-4 col-sm-7 align-self-sm-end&quot;&gt;
+              &lt;div class=&quot;hero-img hero-img-custom z-index-1 mb-n12 mb-md-0 aos-init aos-animate&quot; data-aos=&quot;fade-left&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
+                &lt;img class=&quot;w-100 w-xl-auto&quot; src=&quot;image/conference/png/hero-main.png&quot; alt=&quot;&quot;&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    </code>
+   </pre>
+{% endmacro %}

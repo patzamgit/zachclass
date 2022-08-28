@@ -1,0 +1,198 @@
+{% extends "template.njk" %}
+{% import "sections/header/_header.njk" as Header %}
+{% import "sections/hero-area/hero-8.njk" as Hero %}
+{% import "sections/cta/cta-5.njk" as Cta %}
+{% import "sections/content/content-6.njk" as Content %}
+{% import "sections/testimonial/testimonial-8.njk" as Testimonial %}
+{% import "sections/footers/_footer-2.njk" as Footer %}
+{% block main %}
+{{Header.render(header.eight)}}
+
+  <!-- Hero Area -->
+  {{Hero.render(hero.eight)}}
+
+  <div class="category-area mt-n29 pb-19 pb-lg-21">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+          <div class="single-category w-100 rounded-10 bg-gray-2 d-inline-block px-12 pt-9 pb-12 mb-9 gr-hover-shadow-6 ">
+            <div class="case-content mb-9">
+              <h3 class="category-title gr-text-6 mb-3 text-blackish-blue">Living Room</h3>
+              <span class="item-count gr-text-9 mb-0 d-inline-block text-blackish-blue gr-opacity-7">23 Items</span>
+            </div>
+            <div class="category-img text-center">
+              <img src="{{root}}image/l8/png/category-1.png" alt="" class="">
+            </div>
+          </div>
+          <div class="single-category w-100 rounded-10 bg-gray-2 d-inline-block px-12 pt-9 pb-12 mb-9 gr-hover-shadow-6 ">
+            <div class="case-content mb-9">
+              <h3 class="category-title gr-text-6 mb-3 text-blackish-blue">Kitchen</h3>
+              <span class="item-count gr-text-9 mb-2 d-inline-block text-blackish-blue gr-opacity-7">11 Items</span>
+            </div>
+            <div class="category-img text-center">
+              <img src="{{root}}image/l8/png/category-4.png" alt="" class="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+          <div class="single-category w-100 rounded-10 bg-gray-2 d-inline-block px-12 pt-9 pb-12 mb-9 gr-hover-shadow-6 ">
+            <div class="case-content mb-9">
+              <h3 class="category-title gr-text-6 mb-3 text-blackish-blue">Dining Room</h3>
+              <span class="item-count gr-text-9 mb-0 d-inline-block text-blackish-blue gr-opacity-7">36 Items</span>
+            </div>
+            <div class="category-img text-center">
+              <img src="{{root}}image/l8/png/category-2.png" alt="" class="">
+            </div>
+          </div>
+          <div class="single-category w-100 rounded-10 bg-gray-2 d-inline-block px-12 pt-9 pb-12 mb-9 gr-hover-shadow-6 ">
+            <div class="case-content mb-9">
+              <h3 class="category-title gr-text-6 mb-3 text-blackish-blue">Office</h3>
+              <span class="item-count gr-text-9 mb-2 d-inline-block text-blackish-blue gr-opacity-7">09 Items</span>
+            </div>
+            <div class="category-img text-center">
+              <img src="{{root}}image/l8/png/category-5.png" alt="" class="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
+          <div class="single-category w-100 rounded-10 bg-gray-2 d-inline-block px-12 pt-9 pb-12 mb-9 gr-hover-shadow-6 ">
+            <div class="case-content mb-9">
+              <h3 class="category-title gr-text-6 mb-3 text-blackish-blue">Bed Room</h3>
+              <span class="item-count gr-text-9 mb-0 d-inline-block text-blackish-blue gr-opacity-7">17 Items</span>
+            </div>
+            <div class="category-img text-center">
+              <img src="{{root}}image/l8/png/category-3.png" alt="" class="">
+            </div>
+          </div>
+          <div class="single-category w-100 rounded-10 bg-gray-2 d-inline-block px-12 pt-9 pb-12 mb-9 gr-hover-shadow-6 ">
+            <div class="case-content mb-9">
+              <h3 class="category-title gr-text-6 mb-3 text-blackish-blue">Outdoor</h3>
+              <span class="item-count gr-text-9 mb-2 d-inline-block text-blackish-blue gr-opacity-7">45 Items</span>
+            </div>
+            <div class="category-img text-center">
+              <img src="{{root}}image/l8/png/category-6.png" alt="" class="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% set product_data = [
+    {
+      image:"product-image-1.png",
+      priceNew: "$899",
+      priceOld: "$1,350",
+      title: "Safavieh Couture"
+
+    },
+    {
+      image:"product-image-2.png",
+      priceNew: "$34",
+      title: "Fair Trade Ghana"
+
+    },
+    {
+      image:"product-image-3.png",
+      priceNew: "$44.99",
+      title: "KingSo Round Table"
+
+    },
+    {
+      image:"product-image-4.png",
+      priceNew: "$120",
+      priceOld: "$350",
+      title: "Safavieh Couture"
+
+    },
+    {
+      image:"product-image-5.png",
+      priceNew: "$31.49",
+      title: "Trade Folding Stool"
+
+    },
+    {
+      image:"product-image-6.png",
+      priceNew: "$31.49",
+      priceOld: "$350",
+      title: "Rivet Accent Chair"
+
+    },
+    {
+      image:"product-image-7.png",
+      priceNew: "$110",
+      priceOld: "$350",
+      title: "Armen Living Chair "
+
+    },
+    {
+      image:"product-image-8.png",
+      priceNew: "$120",
+      priceOld: "$350",
+      title: "Knight Chair"
+
+    }
+    ] %}
+  <!-- Product Area -->
+  <div class="pb-13 pb-md-25">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title text-center">
+            <h2 class="gr-text-5">
+              Explore All Products
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-md-n5" data-aos="fade-right" data-aos-duration="600" data-aos-once="true">
+        {% for data in product_data %}
+        <div class="col-xs-6 col-md-4 col-lg-4 col-xl-3 mt-12 mt-md-17">
+          <div class="product-card gr-product-hover-1">
+            <div class="py-29 w-100 position-relative rounded-10 overflow-hidden">
+              <div class="card-image bg-gray-2 gr-abs-tl h-100 w-100 gr-flex-all-center">
+                <img src="{{root}}image/l8/png/{{data.image}}" alt="">
+              </div>
+              <div class="card-btn hover-animation-item">
+                <a href="" class="btn btn-primary btn-hover-translate-none with-icon-left gr-card-box-shadow py-3 px-8">
+                  <i>+</i>Add to cart
+                </a>
+              </div>
+            </div>
+            <div class="card-text text-center">
+              <div class="gr-text-9 mt-8 line-height-reset mb-2"><span class="text-green">{{data.priceNew}}</span>  {% if data.priceOld %} <span class="ml-2 text-linethrough"> {{data.priceOld}}</span> {% endif %}</div>
+              <h3 class="gr-text-7">{{data.title}}</h3>
+              <div class="ratings d-flex justify-content-center">
+                <i class="fas fa-star mx-1 text-yellow-orange gr-text-8"></i>
+                <i class="fas fa-star mx-1 text-yellow-orange gr-text-8"></i>
+                <i class="fas fa-star mx-1 text-yellow-orange gr-text-8"></i>
+                <i class="fas fa-star mx-1 text-yellow-orange gr-text-8"></i>
+                <i class="fas fa-star mx-1 text-yellow-orange gr-text-8"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="text-center mt-13 mt-md-19">
+        <a href="" class="btn btn-outline-gray-310 gr-hover-y bg-white text-black">Check all products</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Section  -->
+  {{Content.render("./", "bg-blue dark-mode-texts pt-13 pt-md-25 pb-13 pb-md-25 mx-md-6 rounded-10 mb-6")}}
+
+
+  <!-- Testimonial -->
+  {{Testimonial.render("./", "bg-blackish-blue dark-mode-texts")}}
+  
+  <!-- CTA -->
+  {{Cta.render()}}
+
+  <!-- Footer section -->
+  {{Footer.render(footer.eight)}}
+
+{% endblock %}
+

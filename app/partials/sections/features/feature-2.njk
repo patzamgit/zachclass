@@ -1,0 +1,42 @@
+{% macro render(root,additional_class) %}
+
+<div class="feature-section border-top {{additional_class}}">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 mb-8 mb-md-13 mb-lg-0">
+        <div class="feature-widget media" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true" data-aos-delay="300">
+          <div class="widget-icon mr-8">
+            <img src="{{root}}image/svg/l4-feature-icon1.svg" alt="">
+          </div>
+          <div class="widget-texts">
+            <h3 class="title gr-text-7 font-weight-bold mb-6">Organize your campaigns</h3>
+            <p class="gr-text-9 mb-0">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-8 mb-md-13 mb-lg-0">
+        <div class="feature-widget media" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true" data-aos-delay="800">
+          <div class="widget-icon mr-8">
+            <img src="{{root}}image/svg/l4-feature-icon2.svg" alt="">
+          </div>
+          <div class="widget-texts">
+            <h3 class="title gr-text-7 font-weight-bold mb-6">Manage customers</h3>
+            <p class="gr-text-9 mb-0">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-8 mb-md-13 mb-lg-0">
+        <div class="feature-widget media" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true" data-aos-delay="1300">
+          <div class="widget-icon mr-8">
+            <img src="{{root}}image/svg/l4-feature-icon3.svg" alt="">
+          </div>
+          <div class="widget-texts">
+            <h3 class="title gr-text-7 font-weight-bold mb-6">Track progress fast</h3>
+            <p class="gr-text-9 mb-0">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+{% endmacro %}

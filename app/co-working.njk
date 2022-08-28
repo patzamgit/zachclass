@@ -1,0 +1,97 @@
+
+{% extends "template.njk" %}
+{% import "sections/header/_header.njk" as Header %}
+{% import "sections/hero-area/hero-9.njk" as Hero %}
+{% import "sections/counter/counter-5.njk" as Fact %}
+{% import "sections/content/content-3.njk" as Content %}
+{% import "sections/features/feature-5.njk" as Feature %}
+{% import "sections/faq/faq-2.njk" as Faq %}
+{% import "sections/newsletter/newsletter-2.njk" as Newsletter %}
+{% import "sections/footers/_footer-2.njk" as Footer %}
+
+
+{% block main %}
+  {{Header.render(header.nine)}}
+  <!-- Hero Area -->
+  {{Hero.render(hero.nine)}}
+
+  <!-- Fact Counter section -->
+  {{Fact.render()}}
+
+
+  <!-- Locations section  -->
+  <div class="location-section bg-default-4 pt-14 pb-7 py-lg-23">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-7 col-md-9">
+          <div class="section-title text-center mb-11 mb-lg-19">
+            <h2 class="title gr-text-3 mb-7">Popular locations</h2>
+            <p class="gr-text-8 px-lg-8 mb-0">With lots of unique blocks, you can easily build a page easily without any coding. </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+          <div class="location-card mb-9 gr-hover-scale-img">
+            <a href="#" class="card-img">
+              <img src="{{root}}image/coworking/jpg/location-card1.jpg" alt="" class="w-100 rounded-10">
+            </a>
+            <div class="card-content px-5 pt-9 text-center">
+              <a href="#">
+                <h3 class="title gr-text-6 mb-2">Beauview</h3>
+              </a>
+              <p class="gr-text-11 mb-0 d-inline-block gr-text-color-opacity">37 seats</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+          <div class="location-card mb-9 gr-hover-scale-img">
+            <a href="#" class="card-img">
+              <img src="{{root}}image/coworking/jpg/location-card2.jpg" alt="" class="w-100 rounded-10">
+            </a>
+            <div class="card-content px-5 pt-9 text-center">
+              <a href="#">
+                <h3 class="title gr-text-6 mb-2">Haleyborough</h3>
+              </a>
+              <p class="gr-text-11 mb-0 d-inline-block gr-text-color-opacity">12 seats</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+          <div class="location-card mb-9 gr-hover-scale-img">
+            <a href="#" class="card-img">
+              <img src="{{root}}image/coworking/jpg/location-card3.jpg" alt="" class="w-100 rounded-10">
+            </a>
+            <div class="card-content px-5 pt-9 text-center">
+              <a href="#">
+                <h3 class="title gr-text-6 mb-2">Jeromyshire</h3>
+              </a>
+              <p class="gr-text-11 mb-0 d-inline-block gr-text-color-opacity">28 seats</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content section 1 -->
+  {{Content.render("./", "bg-gradient bg-gradient-3 pt-lg-25 pt-14 pb-10 pb-lg-15")}}
+
+
+  <!-- feature section -->
+  {{Feature.render("./", "pt-8 pt-lg-15 pb-2 pb-lg-17")}}
+
+
+  <!-- Content section 2 with FAQ accordion -->
+  {{Faq.render("content-section pt-13 pt-lg-28 pb-15 pb-lg-29 bg-blackish-blue dark-mode-texts")}}
+
+
+  <!-- Newsletter Subscription section -->
+  {{Newsletter.render()}}
+
+
+  <!-- Footer section -->
+  {{Footer.render(footer.nine)}}
+
+
+{% endblock %}

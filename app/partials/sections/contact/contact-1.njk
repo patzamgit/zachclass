@@ -1,0 +1,56 @@
+{% macro render(additional_class) %}
+
+<div class="contact-section pb-5 pb-md-29 bg-default-2 {{additional_class}}">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-5 col-md-6 col-lg-5 col-xl-5 offset-lg-1 d-flex flex-column justify-content-center mb-9 order-sm-2">
+        <div class="single-contact-widget mb-13">
+          <h3 class="gr-text-6 mb-5">Call us</h3>
+          <p class="gr-text-7 mb-0">+1-940-394-2948 <br>
+            +1-389-385-3807</p>
+        </div>
+        <div class="single-contact-widget mb-13">
+          <h3 class="gr-text-6 mb-5">Email us</h3>
+          <p class="gr-text-7 mb-0">
+            support@grayic.com<br>
+            contact@grayic.com
+          </p>
+        </div>
+        <div class="single-contact-widget">
+          <h3 class="gr-text-6 mb-5">Visit us</h3>
+          <p class="gr-text-7 mb-0">
+            34 Madison Street,<br>
+            NY, USA 10005
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-7 col-md-6 col-lg-5 col-xl-4 order-sm-1">
+        <div class="login-form bg-white border-gray-3 px-7 pt-8 pb-9 shadow-1 rounded-10">
+          <form action="./">
+            <div class="form-group">
+              <label for="name" class="gr-text-11 font-weight-bold text-blackish-blue">First & Last Name</label>
+              <input class="form-control px-7 gr-text-11 border" type="text" id="name" placeholder="i.e. John Doe">
+            </div>
+            <div class="form-group">
+              <label for="name" class="gr-text-11 font-weight-bold text-blackish-blue">Email</label>
+              <input class="form-control px-7 gr-text-11 border" type="text" id="email" placeholder="i.e. john@mail.com">
+            </div>
+            <div class="form-group">
+              <label for="name" class="gr-text-11 font-weight-bold text-blackish-blue">Subject</label>
+              <input class="form-control px-7 gr-text-11 border" type="text" id="subject" placeholder="i.e. I need a help">
+            </div>
+            <div class="form-group">
+              <label for="name" class="gr-text-11 font-weight-bold text-blackish-blue">Message</label>
+              <textarea name="textblock" id="message" class="form-control px-7 gr-text-11 border" placeholder="Type you message"></textarea>
+            </div>
+            <div class="button-block mb-2">
+              <button class="form-btn btn btn-primary w-100">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

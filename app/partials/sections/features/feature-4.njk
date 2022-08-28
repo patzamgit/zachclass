@@ -1,0 +1,72 @@
+{% macro render(root,additional_class) %}
+
+<div class="feature-section pt-16 pt-lg-25 {{additional_class}}">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-7 col-xl-6">
+        <div class="section-title text-center mb-13 mb-lg-23">
+          <h2 class="title gr-text-3">We made this app to solve your problems.</h2>
+        </div>
+      </div>
+    </div>
+
+    {% set feature_data = [
+      {
+        icon : 'svg/l6-feature-icon1.svg',
+        title:'Unlimited Projects',
+        text:"With lots of unique blocks, you can easily build a page without coding. Build your next landing page."
+
+      },
+      {
+        icon : 'svg/l6-feature-icon2.svg',
+        title:'Team Management',
+        text:"With lots of unique blocks, you can easily build a page without coding. Build your next landing page."
+
+      },
+      {
+        icon : 'svg/l6-feature-icon3.svg',
+        title:'File Sharing',
+        text:"With lots of unique blocks, you can easily build a page without coding. Build your next landing page."
+
+      },
+      {
+        icon : 'svg/l6-feature-icon4.svg',
+        title:'Video Meetings',
+        text:"With lots of unique blocks, you can easily build a page without coding. Build your next landing page."
+
+      },
+      {
+        icon : 'svg/l6-feature-icon5.svg',
+        title:'Time Tracking',
+        text:"With lots of unique blocks, you can easily build a page without coding. Build your next landing page."
+
+      },
+      {
+        icon : 'svg/l6-feature-icon6.svg',
+        title:'Payment System',
+        text:"With lots of unique blocks, you can easily build a page without coding. Build your next landing page."
+
+      }
+      ] %}
+    <div class="row justify-content-center">
+      {% for data in feature_data %}
+      <div class="col-sm-6 col-lg-4 mb-12">
+        <div class="feature-widget d-sm-flex">
+            <div class="widget-icon gr-text-4 text-green mr-sm-9 mb-7 mb-lg-0">
+              <img class="" src="{{root}}image/{{data.icon}}" alt="/">
+            </div>
+            <div class="content">
+                <h3 class="title gr-text-7 mb-5">{{data.title}}</h3>
+                <p class="gr-text-9 gr-text-color-opacity">{{data.text}}</p>
+            </div>
+        </div>
+      </div>
+      {% endfor %}
+      <div class="col-12">
+        <div class="border-sm-divider dark text-center mt-lg-13"></div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+{% endmacro %}

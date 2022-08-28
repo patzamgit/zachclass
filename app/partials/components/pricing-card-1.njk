@@ -1,0 +1,9 @@
+{% macro static(badgeText,price,subPriceText,text,href) %}
+<div class="pricing-card-1 bg-white text-center border border-gray-3 rounded-10 px-6 pt-11 pb-6 mb-11">
+  <span class="title-top gr-text-12 font-weight-bold text-blue text-uppercase gr-bg-blue-opacity-1 rounded-pill px-6 py-3">{{badgeText}}</span>
+  <h2 class="pricing-title text-blackish-blue gr-text-3 mt-10 mb-1">${{price}}</h2>
+  <span class="title-bottom gr-text-9 text-blackish-blue-opacity">{{subPriceText}}</span>
+  <p class="gr-text-9 text-blackish-blue px-7 mt-11">{{text}}</p>
+  <button class="btn btn-primary gr-hover-y mt-11 w-100">Get started for free</button>
+</div>
+{% endmacro %}

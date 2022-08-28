@@ -1,0 +1,28 @@
+.accordion-trigger{
+  &.arrow-icon{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:after{
+      content: "\ea05";
+      font-family: "Grayic";
+      font-size: 32px;
+      display: block;
+      line-height: 1;
+      transform: rotate(0deg);
+      transition: .4s;
+    }
+    &[aria-expanded="true"]{
+      &:after{
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}
+
+// .accordion {
+//   &.border-top-5 {
+//     border-top: 5px solid;
+//   }
+// }

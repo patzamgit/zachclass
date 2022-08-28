@@ -1,0 +1,19 @@
+{% macro render(root,additional_class) %}
+
+<div class="video-section bg-image py-28 py-lg-35 dark-mode-texts {{additional_class}}" style="background-image: url({{root}}image/inner/video-bg-2.png);">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-xl-6 col-lg-7 col-md-8">
+        <div class="text-center video-content">
+          <!-- .video-btn starts-->
+          <a class="video-play-icon mx-auto circle-120 bg-primary gr-text-7 text-white my-lg-8 gr-hover-y focus-reset" data-fancybox="" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" tabindex="-1">
+            <i class="icon icon-triangle-right-17-2"></i>
+          </a>
+          <!--/.video-btn starts-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

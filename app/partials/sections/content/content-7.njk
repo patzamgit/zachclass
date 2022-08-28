@@ -1,0 +1,37 @@
+{% macro render(root,additional_class) %}
+
+<div class="content-section {{additional_class}}">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-6 order-lg-2" data-aos="flip-right" data-aos-duration="2000" data-aos-once="true">
+        <div class="content-img text-right">
+          <img src="{{root}}image/l6/png/l6-content2-img.png" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-10 col-lg-6 col-xl-5 pr-xl-13 order-lg-1">
+        <div class="section-title content-text mb-13">
+          <h2 class="title gr-text-3 mb-6">Organize remote team fast & easily.</h2>
+          <p class="gr-text-8">We share common trends and strategies for improving your rental income.</p>
+        </div>
+        <div class="content-widget">
+          <div class="row mb-n9">
+            <div class="col-md-6 col-lg-9 col-xl-10" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+              <div class="single-widget mb-9">
+                <h3 class="w-title gr-text-7">Create Unlimited Teams</h3>
+                <p class="gr-text-9 mb-0">With lots of unique blocks, you can easily build a page without coding. </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-9 col-xl-10" data-aos="fade-right" data-aos-duration="1100" data-aos-once="true">
+              <div class="single-widget mb-9">
+                <h3 class="w-title gr-text-7">Hasslefree Chat with Everyone</h3>
+                <p class="gr-text-9 mb-0">With lots of unique blocks, you can easily build a page without coding. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

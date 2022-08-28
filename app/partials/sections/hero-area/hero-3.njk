@@ -1,0 +1,62 @@
+{% macro render(options) %}
+<div class="{{options.wrapperClasses}}" >
+  <div class="container">
+    <div class="row justify-content-sm-end align-items-center">
+      <div class="col-lg-6 col-md-8 py-md-16 py-lg-21" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+        <div class="hero-content pr-xl-19 mb-9 mb-md-0">
+          <h1 class="title gr-text-3 mb-6">Make your business powerful with Shade.</h1>
+          <p class="gr-text-8 mb-8">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
+          <div class="hero-btn mb-8 ">
+            <a href="#" class="btn btn-primary gr-hover-y">Get A Free Quote</a>
+          </div>
+          <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video-link gr-text-color">
+            <span class="d-inline-flex mr-2 gr-text-color">
+              <i class="far fa-play-circle gr-text-9"></i>
+            </span>
+            <span class="gr-text-12 font-weight-bold text-uppercase">Watch how we can help</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5 offset-lg-1 col-md-4 col-sm-7 align-self-sm-end">
+        <div class="hero-img" data-aos="fade-left" data-aos-duration="500" data-aos-once="true">
+          <img class="w-100" src="{{options.heroImage}}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro code(options) %}
+   <!-- Hero Area -->
+   <pre class="language-markup">
+    <code>
+      &lt;div class=&quot;{{options.wrapperClasses}}&quot; &gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row justify-content-sm-end align-items-center&quot;&gt;
+          &lt;div class=&quot;col-lg-6 col-md-8 py-md-16 py-lg-21&quot; data-aos=&quot;fade-right&quot; data-aos-duration=&quot;500&quot; data-aos-once=&quot;true&quot;&gt;
+            &lt;div class=&quot;hero-content pr-xl-19 mb-9 mb-md-0&quot;&gt;
+              &lt;h1 class=&quot;title gr-text-3 mb-6&quot;&gt;Make your business powerful with Shade.&lt;/h1&gt;
+              &lt;p class=&quot;gr-text-8 mb-8&quot;&gt;With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.&lt;/p&gt;
+              &lt;div class=&quot;hero-btn mb-8 &quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-primary gr-hover-y&quot;&gt;Get A Free Quote&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;a data-fancybox href=&quot;https://www.youtube.com/watch?v=_sI_Ps7JSEk&quot; class=&quot;video-link gr-text-color&quot;&gt;
+                &lt;span class=&quot;d-inline-flex mr-2 gr-text-color&quot;&gt;
+                  &lt;i class=&quot;far fa-play-circle gr-text-9&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;span class=&quot;gr-text-12 font-weight-bold text-uppercase&quot;&gt;Watch how we can help&lt;/span&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-lg-5 offset-lg-1 col-md-4 col-sm-7 align-self-sm-end&quot;&gt;
+            &lt;div class=&quot;hero-img&quot; data-aos=&quot;fade-left&quot; data-aos-duration=&quot;500&quot; data-aos-once=&quot;true&quot;&gt;
+              &lt;img class=&quot;w-100&quot; src=&quot;{{options.heroImage}}&quot; alt=&quot;&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    </code>
+   </pre>
+{% endmacro %}

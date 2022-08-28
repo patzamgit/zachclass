@@ -1,0 +1,124 @@
+{
+  "hero":{
+    "one":{
+      "wrapperClasses": "pb-11 pb-lg-14 pt-25 pt-lg-29 bg-default-1",
+      "heroImage":"image/l1/png/l1-hero-img.png"
+    },
+    "two":{
+      "wrapperClasses": "bg-image bg-gradient bg-gradient-black pb-17 pt-24 pt-lg-32 pb-lg-28",
+      "bakgroundImage":"image/l2/jpg/l2-hero-bg.jpg"
+    },
+    "three":{
+      "wrapperClasses": "position-relative bg-pattern pattern-2 pt-24 pt-md-15 pt-lg-13 pt-xl-25",
+      "heroImage":"image/l3/png/l3-hero-img.png"
+    },
+    "four":{
+      "wrapperClasses": "hero-area position-relative bg-blackish-blue pt-29 pt-lg-33 pb-15 pb-lg-29",
+      "heroImage":"image/l4/png/l4-hero-img.png",
+      "heroImageShape":"image/l4/png/l4-hero-shape.png"
+    },
+    "five":{
+      "wrapperClasses": "position-relative bg-default-2 bg-pattern pattern-2 pt-27 pt-lg-32 pb-15 pb-lg-27",
+      "heroImage":"image/l5/png/l5-hero-img.png",
+      "heroImageShape":"image/l5/png/l5-dot-shape.png"
+    },
+    "six":{
+      "wrapperClasses": "hero-area-03 pt-29 pt-lg-32 pb-5 position-relative",
+      "heroShapeOne":"image/l6/png/l6-hero-shape1.png",
+      "heroShapeTwo":"image/l6/png/l6-hero-shape2.png",
+      "heroShapeThree":"image/l6/png/l6-hero-shape3.png",
+      "heroImage":"image/l6/png/l6-hero-img.png",
+      "heroButtonImageOne":"image/l6/png/l6-download-appstore.png",
+      "heroButtonImageTwo":"image/l6/png/l6-download-gplay.png",
+      "heroImagePattern":"image/l6/png/l6-hero-pattern.png",
+      "heroWaveShapeLight":"image/svg/l6-hero-wave.svg",
+      "heroWaveShapeDark":"image/svg/l6-hero-wave-dark.svg"
+    },
+    "seven":{
+      "wrapperClasses": "hero-area position-relative pt-25 pt-lg-31 pb-15 pb-lg-27 bg-default-6",
+      "heroImage":"image/l7/png/banner-product-img.png"
+    },
+    "eight":{
+      "wrapperClasses": "dark-mode-texts pt-19 pt-lg-29 pb-35  bg-image mt-19 rounded-10 mx-md-6",
+      "backgroundImage":"image/l8/png/hero-image.png"
+    },
+    "nine":{
+      "wrapperClasses": "co-working bg-image bg-overlay overlay-2 pb-13 pt-24 pt-lg-32 pb-lg-28 d-lg-flex align-items-center lg:min-h-vh-100",
+      "backgroundImage":"image/coworking/jpg/hero-img.jpg"
+    },
+    "ten":{
+      "wrapperClasses": "hero-area position-relative overflow-hidden bg-default-7 bg-pattern pattern-5 pt-24 pt-md-15 pt-lg-25",
+      "heroImage":"image/job-site/png/hero-img-big.png",
+      "heroImageShape":"image/job-site/png/hero-dot-pattern.png",
+      "heroImageShapeTwo":"image/job-site/png/hero-oval-shape.png"
+    },
+    "twelve":{
+      "wrapperClasses": "bg-default-8 pb-15 pt-24 pt-lg-32 pb-lg-28",
+      "heroImage":"image/telemedicine/png/hero-img-main.png",
+      "heroImageShape":"image/telemedicine/png/hero-img-sub.png",
+      "smallCardImg1": "image/telemedicine/png/hero-card-1.png",
+      "smallCardImg2": "image/telemedicine/png/hero-card-2.png"
+    }
+  },
+  "heroElem":{
+    "one":{
+      "wrapperClasses": "pb-11 pb-lg-19 pt-25 pt-lg-25 bg-default-1",
+      "heroImage":"../image/l1/png/l1-hero-img.png"
+    },
+    "two":{
+      "wrapperClasses": "bg-image bg-gradient bg-gradient-black pb-17 pt-17 pt-lg-28 pb-lg-28",
+      "bakgroundImage":"../image/l2/jpg/l2-hero-bg.jpg"
+    },
+    "three":{
+      "wrapperClasses": "position-relative bg-pattern pattern-2",
+      "heroImage":"../image/l3/png/l3-hero-img.png"
+    },
+    "four":{
+      "wrapperClasses": "hero-area position-relative bg-blackish-blue pt-29 pt-lg-30 pb-25 pb-lg-29",
+      "heroImage":"../image/l4/png/l4-hero-img.png",
+      "heroImageShape":"../image/l4/png/l4-hero-shape.png"
+    },
+    "five":{
+      "wrapperClasses": "position-relative bg-default-2 bg-pattern pattern-2 pt-17 pt-lg-27 pb-15 pb-lg-27",
+      "heroImage":"../image/l5/png/l5-hero-img.png",
+      "heroImageShape":"../image/l5/png/l5-dot-shape.png"
+    },
+    "six":{
+      "wrapperClasses": "hero-area-03 pt-29 pt-lg-32 pb-5 position-relative",
+      "heroShapeOne":"../image/l6/png/l6-hero-shape1.png",
+      "heroShapeTwo":"../image/l6/png/l6-hero-shape2.png",
+      "heroShapeThree":"../image/l6/png/l6-hero-shape3.png",
+      "heroImage":"../image/l6/png/l6-hero-img.png",
+      "heroButtonImageOne":"../image/l6/png/l6-download-appstore.png",
+      "heroButtonImageTwo":"../image/l6/png/l6-download-gplay.png",
+      "heroImagePattern":"../image/l6/png/l6-hero-pattern.png",
+      "heroWaveShapeLight":"../image/svg/l6-hero-wave.svg",
+      "heroWaveShapeDark":"../image/svg/l6-hero-wave-dark.svg"
+    },
+    "seven":{
+      "wrapperClasses": "hero-area position-relative pt-10 pt-lg-24 pb-15 pb-lg-27 bg-default-6",
+      "heroImage":"../image/l7/jpg/banner-product-img.jpg"
+    },
+    "eight":{
+      "wrapperClasses": "dark-mode-texts pt-35 pt-lg-29 pb-lg-27 pb-34  bg-image rounded-10 mx-md-6",
+      "backgroundImage":"../image/l8/png/hero-image.png"
+    },
+    "nine":{
+      "wrapperClasses": "co-working bg-image bg-overlay overlay-2 pb-13 pt-24 pt-lg-32 pb-lg-32 d-lg-flex align-items-center",
+      "backgroundImage":"../image/coworking/jpg/hero-img.jpg"
+    },
+    "ten":{
+      "wrapperClasses": "hero-area position-relative overflow-hidden bg-default-7 bg-pattern pattern-5 pt-24 pt-md-15 pt-lg-15",
+      "heroImage":"../image/job-site/png/hero-img-big.png",
+      "heroImageShape":"../image/job-site/png/hero-dot-pattern.png",
+      "heroImageShapeTwo":"../image/job-site/png/hero-oval-shape.png"
+    },
+    "twelve":{
+      "wrapperClasses": "bg-default-8 pb-15 pt-24 pt-lg-32 pb-lg-28",
+      "heroImage":"../image/telemedicine/png/hero-img-main.png",
+      "heroImageShape":"../image/telemedicine/png/hero-img-sub.png",
+      "smallCardImg1": "../image/telemedicine/png/hero-card-1.png",
+      "smallCardImg2": "../image/telemedicine/png/hero-card-2.png"
+    }
+  }
+}

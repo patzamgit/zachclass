@@ -1,0 +1,75 @@
+{% macro render(root,additional_class) %}
+
+<div class="content-section border-bottom {{additional_class}}">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-6 col-lg-8 col-sm-10">
+        <div class="section-title text-center mb-12 mb-lg-23">
+          <h2 class="title gr-text-4 mb-6">Find jobs with 3 easy steps</h2>
+          <p class="gr-text-8 px-lg-7 px-xl-0">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="content-img-group text-center mb-8 mb-lg-0">
+          <div class="main-image  w-xs-75 w-lg-85 w-xl-75 mx-auto position-relative gr-z-index-1">
+            <img class="rounded-10 w-100" src="{{root}}image/job-site/jpg/content-img-main.jpg" alt="">
+            <div class="underlay-shadow-img gr-abs-tl-custom-2 h-100" data-aos="fade-down-right" data-aos-duration="900" data-aos-once="true" data-aos-delay="400">
+              <img class="rounded-10 h-100" src="{{root}}image/job-site/jpg/content-img-opacity.jpg" alt="">
+            </div>
+            <div class="notif-badge gr-abs-bl-custom-3"  data-aos="fade-right" data-aos-duration="900" data-aos-once="true">
+              <img class="rounded-10 w-100" src="{{root}}image/job-site/png/notification-badge.png" alt="">
+            </div>
+          </div>
+          
+        
+        </div>
+      </div>
+      <div class="col-lg-6">
+        {% set content_data = [
+          {
+            count : 1,
+            title:'Search for a job',
+            text:"With lots of unique blocks, you can easily build a page without coding."
+  
+          },
+          {
+            count : 2,
+            title:'Apply within our website',
+            text:"With lots of unique blocks, you can easily build a page without coding."
+  
+          },
+          {
+            count : 3,
+            title:'Get interview call',
+            text:"With lots of unique blocks, you can easily build a page without coding."
+  
+          }
+          ] 
+        %}
+        <div class="content-widget mt-7 mt-lg-0 pr-lg-13 pl-xl-19">
+          <div class="row align-items-center">
+            {% for data in content_data %}
+
+            <div class="col-md-6 col-lg-12" data-aos="fade-left" data-aos-duration="900" data-aos-once="true">
+              <div class="single-widget my-9 media">
+                <div class="media-icon circle-sm bg-blue mr-8">
+                  <span class="count text-white gr-text-9">{{data.count}}</span>
+                </div>
+                <div class="media-body">
+                  <h3 class="w-title mb-5 gr-text-7">{{data.title}}</h3>
+                  <p class="gr-text-9 mb-0">{{data.text}}</p>
+                </div>
+              </div>
+            </div>
+
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

@@ -1,0 +1,43 @@
+{% macro render(root,additional_class) %}
+
+<div class="feature-section bg-default-4 {{additional_class}}">
+  <div class="container">
+    {% set feature_data = [
+      {
+        icon : 'svg/desk-drawer.svg',
+        title:'Dedicated Desk',
+        text:"With lots of unique blocks, you can easily build a page without coding. Build your next landing page."
+
+      },
+      {
+        icon : 'svg/wifi.svg',
+        title:'High Speed Internet',
+        text:"With lots of unique blocks, you can easily build a page without coding. Build your next landing page."
+
+      },
+      {
+        icon : 'svg/mug.svg',
+        title:'Unlimited Coffee',
+        text:"With lots of unique blocks, you can easily build a page without coding. Build your next landing page."
+
+      }
+      ] %}
+    <div class="row justify-content-center">
+      {% for data in feature_data %}
+      <div class="col-md-6 col-lg-4 mb-12">
+        <div class="feature-widget d-sm-flex">
+            <div class="widget-icon gr-text-4 text-blue mr-8 mb-7 mb-md-0">
+              <img class="" src="{{root}}image/{{data.icon}}" alt="feature"/>
+            </div>
+            <div class="content">
+                <h3 class="title gr-text-7 mb-6">{{data.title}}</h3>
+                <p class="gr-text-9 gr-text-color-opacity mb-0">{{data.text}}</p>
+            </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

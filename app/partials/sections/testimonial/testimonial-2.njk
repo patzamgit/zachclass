@@ -1,0 +1,62 @@
+{% macro render(root,additional_class) %}
+
+<div class="testimonial-section pt-15 pt-lg-24 pb-lg-12 {{additional_class}}">
+  <div class="container">
+    <div class="row align-items-center justify-content-around">
+      <div class="col-lg-4 col-md-6 col-sm-9 mb-16">
+        <div class="single-testimonial text-center h-100 d-flex flex-column px-5">
+          <div class="brand-logo mb-9 mb-lg-13">
+            <img src="{{root}}image/l2/png/testimonial-brand-logo1.png" alt="">
+          </div>
+          <p class="review-text mb-0 gr-text-6 font-weight-bold gr-text-color">“You made it so simple. My new site is so much faster & easier to work with Albino.”</p>
+          <div class="user-block media pt-9 pt-lg-12 d-flex justify-content-center mt-auto">
+            <div class="user-image circle-md mr-7">
+              <img class="w-100" src="{{root}}image/l2/png/l2-testimonial1.png" alt="">
+            </div>
+            <div class="user-text text-left align-self-center">
+              <h4 class="user-title gr-text-9 mb-0">Ilya Vasin</h4>
+              <span class="user-rank gr-text-11 gr-text-color-opacity">Software Engineer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 col-sm-9 mb-16">
+        <div class="single-testimonial text-center h-100 d-flex flex-column px-5">
+          <div class="brand-logo mb-9 mb-lg-13">
+            <img src="{{root}}image/l2/png/testimonial-brand-logo2.png" alt="">
+          </div>
+          <p class="review-text mb-0 gr-text-6 font-weight-bold gr-text-color">“Must have book for students, who want to be a great Product Designer.”</p>
+          <div class="user-block media pt-9 pt-lg-12 d-flex justify-content-center mt-auto">
+            <div class="user-image circle-md mr-7">
+              <img class="w-100" src="{{root}}image/l2/png/l2-testimonial2.png" alt="">
+            </div>
+            <div class="user-text text-left align-self-center">
+              <h4 class="user-title gr-text-9 mb-0">Mariano Rasgado</h4>
+              <span class="user-rank gr-text-11 gr-text-color-opacity">Software Engineer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-9 mb-16">
+        <div class="single-testimonial text-center h-100 d-flex flex-column px-5">
+          <div class="brand-logo mb-9 mb-lg-13">
+            <img src="{{root}}image/l2/png/testimonial-brand-logo1.png" alt="">
+          </div>
+          <p class="review-text mb-0 gr-text-6 font-weight-bold gr-text-color">“You made it so simple. My new site is so much faster & easier to work with Albino.”</p>
+          <div class="user-block media pt-9 pt-lg-12 d-flex justify-content-center mt-auto">
+            <div class="user-image circle-md mr-7">
+              <img class="w-100" src="{{root}}image/l2/png/l2-testimonial3.png" alt="">
+            </div>
+            <div class="user-text text-left align-self-center">
+              <h4 class="user-title gr-text-9 mb-0">Oka Tomoaki</h4>
+              <span class="user-rank gr-text-11 gr-text-color-opacity">Software Engineer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

@@ -1,0 +1,40 @@
+{% extends "template.njk" %}
+ 
+{% block main %}
+ 
+<div class="sign-in bg-default-2">
+  {% include "_header-brand.njk" %}
+ 
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="main-block pt-25">
+          <div class="form-title text-center">
+            <h2 class="title gr-text-2 mb-9">Reset Password</h2>
+            <p class="gr-text-8 mb-13">Enter your email to get reset link</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 col-lg-5 col-xl-4">
+        <div class="main-block pb-25">
+          <div class="login-form bg-white border rounded-10 px-8 pt-8 pb-9 shadow-1 mb-11">
+            <form action="./">
+              <div class="form-group">
+                <label for="email" class="gr-text-11 font-weight-bold text-blackish-blue">Email</label>
+                <input class="form-control gr-text-11 border" type="email" id="email" placeholder="i.e. john@mail.com">
+              </div>
+              <div class="button-block mt-3 ">
+                <button class="form-btn btn btn-primary w-100">Send Reset Link</button>
+              </div>
+            </form>
+          </div>
+          <div class="form-bottom excerpt text-center">
+            <p class="sign-up-text gr-text-9 gr-text-color">Rememered the password?<a href="sign-up.html" class="text-primary"> Sign in now</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "_inner-footer.njk" %}
+{% endblock %}

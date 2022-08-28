@@ -1,0 +1,32 @@
+{
+	"landing1":{
+		"header":{
+			"header_type": "site-header--menu-center sticky-header",
+			"absolute_header": true,
+			"container_fluid": true,
+			"sticky_header": false,
+			"mobile_sticky": false,
+			"additional_classes": "",
+			"additional_button_classes":" ml-auto ml-lg-5 mr-6 mr-lg-0",
+			"navbar_mode": "light",
+			"header_button": true,
+			"header_button_class":"btn-primary gr-text-9",
+			"header_button_text":"Get started free"
+		}
+	},
+	"landing2":{
+		"header":{
+			"header_type": "site-header--menu-center",
+			"absolute_header": true,
+			"container_fluid": true,
+			"sticky_header": false,
+			"mobile_sticky": false,
+			"additional_classes": "",
+			"additional_button_classes":" ml-auto ml-lg-5 mr-6 mr-lg-0",
+			"navbar_mode": "light",
+			"header_button": true,
+			"header_button_class":"btn-primary gr-text-9",
+			"header_button_text":"Get started free"
+		}
+	}
+}

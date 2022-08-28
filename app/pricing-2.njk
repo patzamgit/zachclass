@@ -1,0 +1,38 @@
+{% extends "template.njk" %}
+{# {% set theme_mode = "dark" %}  #}
+
+{% import "sections/faq/faq-3.njk" as Faq %}
+{% import "sections/pricing/sec-pricing-2.njk" as Pricing %}
+{% import "sections/header/_header.njk" as Header %}
+{% block main %}
+{{Header.render(header.innerPage,1)}}
+<div class="inner-banner bg-default-2 pt-26 pt-lg-31">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-8 col-lg-9">
+       <div class="px-md-12 text-center mb-11 mb-lg-17">
+        <h2 class="title gr-text-2 mb-9 mb-lg-12">Pricing & Plans</h2>
+        <p class="gr-text-8 mb-0">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Pricing section  -->
+ <div class="pricing-section bg-default-2 pt-lg-9 pb-5 pb-md-19">
+  <div class="container">
+    {{Pricing.render()}}
+  </div>
+</div>
+
+
+
+<!-- FAQ Section (Pricing Page) -->
+{{Faq.render("bg-default-2 pt-lg-7 pb-9 pb-lg-22")}}
+
+
+{% include "_inner-footer.njk" %}
+
+{% endblock %}

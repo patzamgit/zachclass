@@ -1,0 +1,52 @@
+{% macro render(options) %}
+   <!-- Hero Area -->
+  <div class="{{options.wrapperClasses}} position-relative">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-6 col-lg-7 col-md-9 col-sm-10" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+          <div class="hero-content text-center">
+            <h1 class="gr-text-3 mb-8">Get things done by awesome remote team</h1>
+            <p class="gr-text-8">We share common trends and strategies for improving your rental income and making sure you stay in high demand.</p>
+            <div class="hero-btns d-flex flex-column flex-md-row justify-content-md-center mt-11">
+              <a href="#" class="btn btn-primary with-icon gr-hover-y mb-6 mb-md-0 mr-md-7">Get started for free<i class="fas fa-arrow-right gr-text-11"></i></a>
+              <a href="#" class="btn btn-white gr-hover-y">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-10 mt-15 mt-lg-23">
+          <div class="hero-img" data-aos="fade-left" data-aos-duration="500" data-aos-once="true">
+            <img class="img-fluid" src="{{options.heroImage}}" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
+{% macro code(options) %}
+   <!-- Hero Area Code-->
+   <pre class="language-markup">
+    <code>
+      &lt;div class=&quot;{{options.wrapperClasses}} position-relative&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row justify-content-center align-items-center&quot;&gt;
+          &lt;div class=&quot;col-xl-6 col-lg-7 col-md-9 col-sm-10&quot; data-aos=&quot;fade-right&quot; data-aos-duration=&quot;500&quot; data-aos-once=&quot;true&quot;&gt;
+            &lt;div class=&quot;hero-content text-center&quot;&gt;
+              &lt;h1 class=&quot;gr-text-3 mb-8&quot;&gt;Get things done by awesome remote team&lt;/h1&gt;
+              &lt;p class=&quot;gr-text-8&quot;&gt;We share common trends and strategies for improving your rental income and making sure you stay in high demand.&lt;/p&gt;
+              &lt;div class=&quot;hero-btns d-flex flex-column flex-md-row justify-content-md-center mt-11&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-primary with-icon gr-hover-y mb-6 mb-md-0 mr-md-7&quot;&gt;Get started for free&lt;i class=&quot;fas fa-arrow-right gr-text-11&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-white gr-hover-y&quot;&gt;Learn more&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-sm-10 mt-15 mt-lg-23&quot;&gt;
+            &lt;div class=&quot;hero-img&quot; data-aos=&quot;fade-left&quot; data-aos-duration=&quot;500&quot; data-aos-once=&quot;true&quot;&gt;
+              &lt;img class=&quot;img-fluid&quot; src=&quot;{{options.heroImage}}&quot; alt=&quot;&quot; /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    </code>
+   </pre>
+{% endmacro %}

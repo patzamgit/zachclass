@@ -1,0 +1,94 @@
+{% macro render(additional_class) %}
+
+
+  
+{% set acc_data = [
+  {
+    key: "2-1",
+    title: "How to setup Shade Pro?",
+    text: "With lots of unique blocks, you can easily build a page with coding. Build your next landing page. Integer ut obe ryn. Sed feugiat vitae turpis a porta.",
+    show: true
+  },
+  {
+    key: "2-2",
+    title: "Can I use Shade Pro for my clients?",
+    text: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
+    show:false
+  },
+  {
+    key: "2-3",
+    title: "How often do you release update?",
+    text: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
+    show:false
+  },
+  {
+    key: "2-4",
+    title: "How can I access to old version?",
+    text: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
+    show:false
+  }
+] %}
+
+<div class="{{additional_class}}">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-10 col-lg-6 col-xl-5">
+        <div class="section-title content-text mb-13 mb-lg-16">
+          <h2 class="title gr-text-3 mb-6">We are always here for your backup.</h2>
+          <p class="gr-text-8">We share common trends and strategies for improving your rental income.</p>
+        </div>
+        <div class="content-widget">
+          <div class="row">
+            <div class="col-md-6 col-lg-9 col-xl-10" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+              <div class="single-widget media mb-9 mb-lg-12">
+                <div class="widget-icon circle-30 bg-green mr-7">
+                  <i class="icon icon-check-2-2 text-white"></i>
+                </div>
+                <div class="widget-text">
+                  <h3 class="w-title gr-text-7">Noise Free Locations</h3>
+                  <p class="gr-text-9 mb-0">With lots of unique blocks, you can easily build a page without coding. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-9 col-xl-10" data-aos="fade-right" data-aos-duration="1100" data-aos-once="true">
+              <div class="single-widget media mb-9 mb-lg-0">
+                <div class="widget-icon circle-30 bg-green mr-7">
+                  <i class="icon icon-check-2-2 text-white"></i>
+                </div>
+                <div class="widget-text">
+                  <h3 class="w-title gr-text-7">24/7 Hour Support</h3>
+                  <p class="gr-text-9 mb-0">With lots of unique blocks, you can easily build a page without coding. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div class="col-md-10 col-lg-6 col-xl-6 offset-xl-1 mt-9 mt-lg-0" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
+        <!-- FAQ Accordion -->
+        <div class="accordion pl-9 pr-8 rounded-10 bg-white border-green border-top-5" id="accordionExample">
+          {% for item in  acc_data %}
+          <div class="border-bottom overflow-hidden">
+            <div class="mb-0 border-bottom-0" id="heading{{item.key}}">
+              <button class="btn-reset gr-text-7 font-weight-bold text-left text-blackish-blue px-0 py-8 accordion-trigger arrow-icon w-100" type="button" data-toggle="collapse" data-target="#collapse{{item.key}}" aria-expanded="{{ 'true' if item.show else 'false'}}" aria-controls="collapse{{item.key}}">
+                 {{item.title}}
+              </button>
+            </div>
+       
+            <div id="collapse{{item.key}}" class="collapse {{ 'show' if item.show}}" aria-labelledby="heading{{item.key}}" data-parent="#accordionExample">
+              <div class="gr-color-blackish-blue-opacity-7 mt-n3 gr-text-9 pb-8 pr-8">
+               {{item.text}}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endmacro %}

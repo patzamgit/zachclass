@@ -1,0 +1,100 @@
+.product-details-v-slider{
+  .slick-list{
+    margin:0 -5px;
+    @include tablet{
+      margin:-5px 0 ;
+    }
+    @include desktops{
+      margin:-5px 0 ;
+    }
+  }
+  .single-slide{
+      border: 1px solid var(--border-color);
+      background: var(--bg);
+      // padding: 30px;
+      margin:0 5px;
+      border-radius: 10px;
+      @include tablet{
+        margin:5px 0 ;
+      }
+      @include desktops{
+        margin:5px 0 ;
+      }
+      img{
+        width: 100%;
+      }
+    }
+}
+
+.product-details-slider{
+  .slick-list{
+    margin: 0 -15px;
+  }
+  .single-slide{
+    border: 1px solid var(--border-color);
+    background: var(--bg);
+    padding: 30px;
+    margin:0 15px;
+    border-radius: 10px;
+    img{
+      width: 100%;
+
+    }
+  }
+}
+.slick-slide:focus {
+  outline: none;
+}
+
+
+// Job Site Page
+
+.job-feature-slider{
+  .slick-list{
+    margin: 0 -15px;
+    padding-bottom: 45px;
+  }
+  .single-slide{
+    margin: 0 15px;
+  }
+  &-arrows{
+    display: flex;
+    border-radius: 10px;
+    background-color: #f4f7fa;
+    max-width: fit-content;
+    .slick-arrow{
+      font-size: 0;
+      border: 0;;
+      background: transparent;
+      position: relative;
+      &::before{
+        font-family: "Font Awesome 5 Free";
+        font-size: 22px;
+        height: 44px;
+        width: 34px;
+        display: flex;
+        font-weight: 900;
+        justify-content: center;
+        align-items: center;
+        color: $black;
+      }
+    }
+    .slick-prev{
+     &:before{
+      content: "\f060";
+      opacity: 0.3;
+      transition: .4s;
+     }
+     &:hover{
+      &:before{
+        opacity: 1;
+       }
+     }
+    }
+    .slick-next{
+      &:before{
+        content: "\f061";
+       }
+    }
+  }
+}

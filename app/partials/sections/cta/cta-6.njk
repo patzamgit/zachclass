@@ -1,0 +1,46 @@
+{% macro render(additional_class) %}
+
+<div class="cta-section overflow-hidden py-13 py-lg-25 bg-mirage bg-pattern pattern-1 {{additional_class}}">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-5 col-md-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+        <div class="section-title pr-lg-7 mb-0 dark-mode-texts">
+          <div class="chat-icon circle-xl gr-bg-white-opacity-1 text-green gr-text-4 mb-13">
+            <i class="icon icon-chat-round-2 text-green"></i>
+          </div>
+          <h2 class="title gr-text-4 mb-6">Get a free consultancy from our expert right now!</h2>
+          <p class="gr-text-8 pr-lg-7 mb-0">With lots of unique blocks, you can easily build a page without coding. Build your next landing page so quickly with Albino.</p>
+        </div>
+      </div>
+      <div class="col-xl-4 offset-xl-3 col-lg-5 offset-lg-1 col-md-6 mt-9 mt-md-0" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+        <form class="cta-form bg-white light-mode rounded-10 px-8 py-8">
+          <div class="form-group gr-text-11 font-weight-bold text-blackish-blue">
+            <label for="ctaName">Name </label>
+            <input type="text" class="form-control gr-text-11" id="ctaName" placeholder="i.e. John Doe" required>
+          </div>
+          <div class="form-group gr-text-11 font-weight-bold text-blackish-blue">
+            <label for="ctaEmail">Email </label>
+            <input type="email" class="form-control gr-text-11" id="ctaEmail" placeholder="i.e. john@mail.com" required>
+          </div>
+          <div class="form-group gr-text-11 font-weight-bold text-blackish-blue">
+            <label for="ctaPhone">Phone </label>
+            <input type="email" class="form-control gr-text-11" id="ctaPhone" placeholder="i.e. 123-456-7890">
+          </div>
+          <div class="form-group gr-text-11 font-weight-bold text-blackish-blue">
+            <label for="agentCount" class="pr-lg-4">Which service do you need? </label>
+            <select id="agentCount" class="gr-text-11 mb-7">
+              <option value="1" data-display="Select a service">Digital Marketing</option>
+              <option value="2">Content Writing</option>
+              <option value="3">Graphic Design</option>
+              <option value="4">SEO for Business</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary gr-hover-y rounded-8 w-100">Get Free Consultancy</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}
+

@@ -1,0 +1,106 @@
+{% macro render(options) %}
+  
+<!-- Hero Area -->
+<div class="{{options.wrapperClasses}}" id="hero-area-animation">
+  <div class="container" id="animation-area-1">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-9 col-md-7 col-lg-5 offset-xl-1 align-self-sm-end order-lg-2">
+        <div class="hero-img image-group-p12 position-relative mb-9 mb-sm-15 mb-lg-0" data-aos="fade-left" data-aos-duration="500" data-aos-once="true">
+          <img class="w-100" src="{{options.heroImage}}" alt="">
+          <div class="image-bg-positioning">
+            <img src="{{options.heroImageShape}}" alt="">
+          </div>
+        </div>
+
+       <div class=" hero-sm-card-1">
+        <div class="px-7 py-6 d-flex bg-white shadow-10 rounded-15 w-xs-75 w-lg-76 w-xl-68 hero-card-1-animation" id="an-item-1p1">
+          <p class="gr-text-11 mb-0 text-mirage-2">“Use this sprey 3 times in a day when you have running nose.”</p>
+          <div class="small-card-img ml-6">
+            <img src="{{options.smallCardImg1}}" alt="" class="circle-42">
+          </div>
+        </div>
+       </div>
+       <div class="animation-item">
+        <div class="px-7 py-6 d-flex bg-red shadow-9 rounded-15 w-xs-80 w-xl-68 hero-sm-card-2 hero-card-2-animation" id="an-item-1p2">
+          <div class="small-card-img mr-6 text-white">
+            <img src="{{options.smallCardImg2}}" alt="" class="circle-42">
+          </div>
+          <p class="gr-text-11 mb-0 text-white">“Thanks Doctor! What should I do if I have fever in these days?”</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-12 col-md-9 col-lg-7 col-xl-6 order-lg-1" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+        <div class="hero-content section-title text-center text-lg-left">
+          <h1 class="gr-text-2 font-weight-bold mb-8">Get treatment <br class="">from your home!</h1>
+          <p class="gr-text-9 gr-text-color pr-md-7">We've made telemedicine simple and easy for you. Create your personal room and start practicing today.</p>
+          <div class="hero-btns mt-11">
+            <a href="#" class="btn btn-primary with-icon gr-hover-y">Book my appointment<i class="icon icon-tail-right font-weight-bold"></i></a>
+          </div>
+          <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video-link gr-text-color mt-8 gr-flex-y-center justify-content-center justify-content-lg-start">
+            <span class="mr-2 gr-text-color circle-18 border border-black-dynamic">
+              <i class="icon icon-triangle-right-17-2 gr-text-14"></i>
+            </span>
+            <span class="gr-text-12 font-weight-bold text-uppercase">How online treatment works</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endmacro %}
+
+
+{% macro code(options) %}
+   <!-- Hero Area Code-->
+   <pre class="language-markup">
+    <code>
+      &lt;div class=&quot;bg-default-8 pb-15 pt-24 pt-lg-32 pb-lg-28&quot; id=&quot;hero-area-animation&quot;&gt;
+      &lt;div class=&quot;container&quot; id=&quot;animation-area-1&quot;&gt;
+        &lt;div class=&quot;row align-items-center justify-content-center&quot;&gt;
+          &lt;div class=&quot;col-9 col-md-7 col-lg-5 offset-xl-1 align-self-sm-end order-lg-2&quot;&gt;
+            &lt;div class=&quot;hero-img image-group-p12 position-relative mb-9 mb-sm-15 mb-lg-0&quot; data-aos=&quot;fade-left&quot; data-aos-duration=&quot;500&quot; data-aos-once=&quot;true&quot;&gt;
+              &lt;img class=&quot;w-100&quot; src=&quot;image/telemedicine/png/hero-img-main.png&quot; alt=&quot;&quot;&gt;
+              &lt;div class=&quot;image-bg-positioning&quot;&gt;
+                &lt;img src=&quot;image/telemedicine/png/hero-img-sub.png&quot; alt=&quot;&quot;&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot; hero-sm-card-1&quot;&gt;
+              &lt;div class=&quot;px-7 py-6 d-flex bg-white shadow-10 rounded-15 w-xs-75 w-lg-76 w-xl-68 hero-card-1-animation&quot; id=&quot;an-item-1p1&quot;&gt;
+                &lt;p class=&quot;gr-text-11 mb-0 text-mirage-2&quot;&gt;&ldquo;Use this sprey 3 times in a day when you have running nose.&rdquo;&lt;/p&gt;
+                &lt;div class=&quot;small-card-img ml-6&quot;&gt;
+                  &lt;img src=&quot;image/telemedicine/png/hero-card-1.png&quot; alt=&quot;&quot; class=&quot;circle-42&quot;&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;animation-item&quot;&gt;
+              &lt;div class=&quot;px-7 py-6 d-flex bg-red shadow-9 rounded-15 w-xs-80 w-xl-68 hero-sm-card-2 hero-card-2-animation&quot; id=&quot;an-item-1p2&quot;&gt;
+                &lt;div class=&quot;small-card-img mr-6 text-white&quot;&gt;
+                  &lt;img src=&quot;image/telemedicine/png/hero-card-2.png&quot; alt=&quot;&quot; class=&quot;circle-42&quot;&gt;
+                &lt;/div&gt;
+                &lt;p class=&quot;gr-text-11 mb-0 text-white&quot;&gt;&ldquo;Thanks Doctor! What should I do if I have fever in these days?&rdquo;&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-12 col-md-9 col-lg-7 col-xl-6 order-lg-1&quot; data-aos=&quot;fade-right&quot; data-aos-duration=&quot;500&quot; data-aos-once=&quot;true&quot;&gt;
+            &lt;div class=&quot;hero-content section-title text-center text-lg-left&quot;&gt;
+              &lt;h1 class=&quot;gr-text-2 font-weight-bold mb-8&quot;&gt;Get treatment &lt;br class=&quot;&quot;&gt;from your home!&lt;/h1&gt;
+              &lt;p class=&quot;gr-text-9 gr-text-color pr-md-7&quot;&gt;We've made telemedicine simple and easy for you. Create your personal room and start practicing today.&lt;/p&gt;
+              &lt;div class=&quot;hero-btns mt-11&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-primary with-icon gr-hover-y&quot;&gt;Book my appointment&lt;i class=&quot;icon icon-tail-right font-weight-bold&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;a data-fancybox href=&quot;https://www.youtube.com/watch?v=_sI_Ps7JSEk&quot; class=&quot;video-link gr-text-color mt-8 gr-flex-y-center justify-content-center justify-content-lg-start&quot;&gt;
+                &lt;span class=&quot;mr-2 gr-text-color circle-18 border border-black-dynamic&quot;&gt;
+              &lt;i class=&quot;icon icon-triangle-right-17-2 gr-text-14&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+                &lt;span class=&quot;gr-text-12 font-weight-bold text-uppercase&quot;&gt;How online treatment works&lt;/span&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    </code>
+   </pre>
+{% endmacro %}

@@ -1,0 +1,31 @@
+{% extends "template.njk" %}
+{# {% set theme_mode = "dark" %}  #}
+
+{% import "sections/header/_header.njk" as Header %}
+
+{% import "sections/contact/contact-1.njk" as Contact %}
+
+
+{% block main %}
+{{Header.render(header.innerPage,1)}}
+<div class="inner-banner pt-29 pb-md-11 bg-default-2">
+  <div class="container">
+    <div class="row  justify-content-center pt-5">
+      <div class="col-xl-8 col-lg-9">
+       <div class="px-md-15 text-center">
+        <h2 class="title gr-text-2 mb-9">Contact us</h2>
+        <p class="gr-text-8 mb-13">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Contact section  -->
+ {{Contact.render()}}
+
+
+{% include "_inner-footer.njk" %}
+
+{% endblock %}

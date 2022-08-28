@@ -1,0 +1,82 @@
+{% extends "template.njk" %}
+{# {% set theme_mode = "dark" %}  #}
+{% import "sections/header/_header.njk" as Header %}
+
+{% import "sections/videos/video-5.njk" as Video %}
+{% import "sections/features/feature-6.njk" as Feature %}
+
+
+{% block main %}
+{{Header.render(header.innerPage,1)}}
+<div class="inner-banner bg-default-6 pt-24 pt-lg-30 pb-lg-15">
+  <div class="container">
+    <div class="row  justify-content-center pt-5">
+      <div class="col-xl-8 col-lg-9">
+       <div class="px-md-12 mb-13 text-center">
+        <h2 class="title gr-text-2 mb-8 mb-lg-12">Join at Grayic</h2>
+        <p class="gr-text-8 mb-0">By accessing and placing an order with UXTheme, you confirm that you are in agreement with and bound by the terms and conditions</p>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Video Section -->
+  {{Video.render()}}
+
+  <!-- Feature Section -->
+  {{Feature.render()}}
+
+
+
+<div class="bg-default-2 pt-15 pt-lg-23 pb-13 pb-lg-27">
+  <div class="container">
+    <div class="section-title text-center mb-13 mb-lg-20">
+      <h2 class="gr-text-3 mb-0">Current job openings</h2>
+    </div>
+    {% set opening_data = [
+        {
+          title:"Account Manager ",
+          subtitle: "Full Time, New York"
+        },
+        {
+          title:"Full Stack Developer",
+          subtitle: "Full Time, Remote"
+        },
+        {
+          title:"Senior Project Manager",
+          subtitle: "Full Time, New York"
+        },
+        {
+          title:"UX Designer",
+          subtitle: "Full Time, New York"
+        },
+        {
+          title:"Software Engineer",
+          subtitle: "Full Time, New York"
+        }
+      ] %}
+    <div class="row">
+      <div class="col-12">
+        <div class="px-md-13 px-xl-15">
+         {% for data in opening_data %}
+          <a href="#" class="d-flex justify-content-between bg-white rounded-10 px-8 pl-lg-13 pr-lg-11 py-9 py-lg-10 align-items-center mb-5 job-card-hover gr-hover-shadow-5">
+            <div class="texts">
+              <h3 class="gr-text-6 font-weight-bold text-blackish-blue mb-4">{{data.title}}</h3>
+              <p class="gr-text-9 mb-0 gr-color-blackish-blue-opacity-7">{{data.subtitle}}</p>
+            </div>
+            <div class="card-icon">
+              <i class="fas fa-arrow-right gr-text-8 text-storm"></i>
+            </div>
+          </a>
+         {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% include "_inner-footer.njk" %}
+
+{% endblock %}

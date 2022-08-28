@@ -1,0 +1,19 @@
+{% macro render(root,additional_class) %}
+
+<div class="pt-13 pt-md-35 pb-13 pb-md-35 bg-image mx-md-6 rounded-10 {{additional_class}}" style="background-image: url({{root}}image/l8/jpg/cta-bg.jpg);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xs-10 col-sm-10 col-md-9 col-lg-8 col-xl-7">
+        <div class="text-center dark-mode-texts">
+          <h2 class="gr-text-2 font-weight-bold pb-8 pb-md-12">
+            Ready to have a decorated lifestyle?
+          </h2>
+          <a href="#" class="btn btn-green gr-hover-y">Start Shopping</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}
+
